@@ -1,0 +1,11 @@
+[Version]
+Signature="$CHICAGO$"
+AdvancedINF=2.0
+[Add.Code]
+setup.exe=setup.exe
+[setup.exe]
+hook=Default.Installer
+RegisterServer=no
+[Default.Installer]
+file-win32-x86=install.cab
+run=%EXTRACT_DIR%\setup.exe

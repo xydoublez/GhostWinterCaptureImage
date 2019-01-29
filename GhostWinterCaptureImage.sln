@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GhostWinterCaptureImage", "GhostWinterCaptureImage\GhostWinterCaptureImage.csproj", "{0CDA0312-0A2B-466D-8C84-D1F1BBB8F474}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GhostWinterCaptureImageWebTest", "GhostWinterCaptureImageWebTest\GhostWinterCaptureImageWebTest.csproj", "{492FC088-292A-42F3-B5D9-22B53F7F5507}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testcontrol", "testcontrol\testcontrol.csproj", "{472F23A7-C7DD-4A9D-A724-CC71E1C3A644}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoCapture", "VideoCapture\VideoCapture.csproj", "{0E576678-6E5D-4393-AEE9-88FAA0AFA478}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoTest", "VideoTest\VideoTest.csproj", "{15C1B791-F706-4620-BFD9-6060BA065514}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "videoclient", "videoclient\videoclient.csproj", "{3940AD21-92C3-4BB8-8E16-461ECE0946F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication1", "WindowsFormsApplication1\WindowsFormsApplication1.csproj", "{2DA293EE-9E46-4A54-ADC5-228BF8F17E4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CDA0312-0A2B-466D-8C84-D1F1BBB8F474}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CDA0312-0A2B-466D-8C84-D1F1BBB8F474}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CDA0312-0A2B-466D-8C84-D1F1BBB8F474}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CDA0312-0A2B-466D-8C84-D1F1BBB8F474}.Release|Any CPU.Build.0 = Release|Any CPU
+		{492FC088-292A-42F3-B5D9-22B53F7F5507}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{492FC088-292A-42F3-B5D9-22B53F7F5507}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{492FC088-292A-42F3-B5D9-22B53F7F5507}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{492FC088-292A-42F3-B5D9-22B53F7F5507}.Release|Any CPU.Build.0 = Release|Any CPU
+		{472F23A7-C7DD-4A9D-A724-CC71E1C3A644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{472F23A7-C7DD-4A9D-A724-CC71E1C3A644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{472F23A7-C7DD-4A9D-A724-CC71E1C3A644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{472F23A7-C7DD-4A9D-A724-CC71E1C3A644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E576678-6E5D-4393-AEE9-88FAA0AFA478}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E576678-6E5D-4393-AEE9-88FAA0AFA478}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E576678-6E5D-4393-AEE9-88FAA0AFA478}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E576678-6E5D-4393-AEE9-88FAA0AFA478}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15C1B791-F706-4620-BFD9-6060BA065514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15C1B791-F706-4620-BFD9-6060BA065514}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15C1B791-F706-4620-BFD9-6060BA065514}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15C1B791-F706-4620-BFD9-6060BA065514}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3940AD21-92C3-4BB8-8E16-461ECE0946F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3940AD21-92C3-4BB8-8E16-461ECE0946F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3940AD21-92C3-4BB8-8E16-461ECE0946F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3940AD21-92C3-4BB8-8E16-461ECE0946F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DA293EE-9E46-4A54-ADC5-228BF8F17E4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DA293EE-9E46-4A54-ADC5-228BF8F17E4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DA293EE-9E46-4A54-ADC5-228BF8F17E4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DA293EE-9E46-4A54-ADC5-228BF8F17E4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
