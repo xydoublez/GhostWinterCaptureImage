@@ -8,7 +8,7 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Net;
 using System.Net.Sockets;
-using mshtml;
+
 using System.Reflection;
 namespace GhostWinterCaptureImage
 {

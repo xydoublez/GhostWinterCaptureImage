@@ -3,57 +3,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
-    <script src="Scripts/jquery-1.7.1.min.js"></script>
     <script type="text/javascript">
-
-<!--
-
-    //var WshShell = new ActiveXObject("WScript.Shell");
-    //WshShell.RegWrite("HKEY_CLASSES_ROOT\\CLSID\\{73262EF5-1F9F-4217-B4A0-77F9597171EE}\\Implemented Categories\\{7DD95801-9882-11CF-9FA9-00AA006C42C4}")
-
-    ////添加信任站点ip
-
-    //WshShell.RegWrite("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ZoneMap\\Ranges\\Range100\\", "");
-
-    //WshShell.RegWrite("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ZoneMap\\Ranges\\Range100\\http", "2", "REG_DWORD");
-
-    //WshShell.RegWrite("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ZoneMap\\Ranges\\Range100\\:Range", "192.168.0.1");
-
-    //WshShell.RegWrite("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ZoneMap\\Ranges\\Range101\\", "");
-
-    //WshShell.RegWrite("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ZoneMap\\Ranges\\Range101\\http", "2", "REG_DWORD");
-
-    //WshShell.RegWrite("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ZoneMap\\Ranges\\Range101\\:Range", "192.168.0.2");
-
-    ////修改IE ActiveX安全设置
-
-    //WshShell.RegWrite("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1001", "0", "REG_DWORD");
-
-    //WshShell.RegWrite("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1004", "0", "REG_DWORD");
-
-    //WshShell.RegWrite("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1200", "0", "REG_DWORD");
-
-    //WshShell.RegWrite("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1201", "0", "REG_DWORD");
-
-    //WshShell.RegWrite("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1405", "0", "REG_DWORD");
-
-    //WshShell.RegWrite("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\2201", "0", "REG_DWORD");
-
-    ////禁用xinxp弹出窗口阻止程序
-
-    //WshShell.RegWrite("HKCU\\Software\\Microsoft\\Internet Explorer\\New Windows\\PopupMgr", "no");
-
-    //alert("active控件安全设置，弹出窗口设置，信任站点设置成功");
-
-    ////-->
-    $(document).ready(function () {
-        //listen.GetHtmlWindow(window);
-        $("#down").click(function () {
-            download.DownloadFile("D:\\mycode\\DICOM\\DICOMFILES\\DXStudy\\1.2.840.113619.2.67.2158294438.16324010109084338.243.dcm", "f:\\test\\1.dcm");
-        });
-
-    }
-    );
+  
     function SocketCallBack(data) {
         alert(data);
     }
@@ -65,22 +16,12 @@
 </head>
 <body>
     <div style="display:none;">
-        <object id="capture" classid="clsid:73262EF5-1F9F-4217-B4A0-77F9597171EE" codebase="install.cab#version=1,0,0,20"></object>
-     <!--   <object id="client"  classid="clsid:17377FAC-ED6F-47FA-8E99-75BB56DD0BB7" ></object>-->
+
         <object id="listen"  classid="clsid:E5466526-8A78-4A02-9654-22C46FB7DAA3" ></object>
-        <!--<object id="download" classid="clsid:E4AEC1BC-5AF3-4D51-B8A5-7D870A992007"></object>--> 
-
-
-     <!--   <input id="test" type="button" value="截屏" onclick="capture.capturePic();" />
-        <input id="run" type="button" value="运行" onclick="capture.Exec('E:/software/ProxifierPE/Proxifier PE/Proxifier.exe')" />-->
-
-    <!--    <input id="openreport" type="button" value="打开" onclick="capture.LoadReport()" />
-        <!--<input id="send" type="button" value="发送" onclick="client.SendData('127.0.0.1', 5000, 'success')" />-->
-        
-        <input id="down" type="button"  value="下载"/>-->
+   
     </div>
    <script type="text/javascript">
-       listen.Listen(5000);
+       listen.Listen(5006);
     </script>
     <script type="text/javascript" for="listen" event="OnReceiveMsg(msg)">
         test(msg);
