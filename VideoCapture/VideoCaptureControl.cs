@@ -353,34 +353,34 @@ namespace GhostWinter.VideoCapture
         public int BmpToDcm(string FileRN, string modality, string Hospital, string ServerTime, string patientname, string processnum, string patientsex, string patientage, string REGISTRATION_ID, string imgcount)
         {
             
-            DICOMX1.DICOMSOPClassUID = "1.2.840.10008.5.1.4.1.1.7";
-            DICOMX1.DICOMSOPInstanceUID = "1.2.7.3.8." + System.DateTime.Now.ToString("yyyy.MM.dd") + "." + System.DateTime.Now.ToString("hh.mm.ss") + ".1";
-            DICOMX1.DICOMImplementationClassUID = "1.2.7.3.8.2007.10.17.23.00.00.3";
-            DICOMX1.DICOMImplementationVersionName = "MASSUN";
-            DICOMX1.DICOMSourceApplicationEntityTitle = "ZYPACS";
-            DICOMX1.DICOMManufacturer = "ZYPACS";
-            DICOMX1.DICOMModality = modality;
-            DICOMX1.DICOMPatientName = patientname;
-            DICOMX1.DICOMPatientSex = patientsex;
-            DICOMX1.DICOMSeriesNumber = 0;
-            DICOMX1.DICOMImageNumber = 0;
-            DICOMX1.DICOMStudyInstanceUID = "1.2.7.3.8." + System.DateTime.Now.ToString("yyyy.MM.dd") + "." + System.DateTime.Now.ToString("hh.mm.ss") + ".101";
-            DICOMX1.DICOMSeriesInstanceUID = "1.2.7.3.8." + System.DateTime.Now.ToString("yyyy.MM.dd") + "." + System.DateTime.Now.ToString("hh.mm.ss");
-            DICOMX1.DICOMPatientID = processnum;
-            DICOMX1.DICOMStudyID = processnum;
-            DICOMX1.DICOMInstitutionName = Hospital;
-            DICOMX1.DICOMStudyDescrp = "ZYPACS";
-            DICOMX1.DICOMCityName = "City";
-            DICOMX1.DICOMRefPhyName = "ExDr";
-            DICOMX1.DICOMPixelSpaceHeight = 1;
-            DICOMX1.DICOMPixelSpaceWidth = 1;
-            DICOMX1.ConvertFileToDICOM(FileRN, "c:\\lzqtemp0.dcm");
-            DicomImage img = new DicomImage("C:\\lzqtemp0.DCM");
-            DicomDataset ds = img.Dataset;
-            ds.Add(DicomTag.PlanarConfiguration, (ushort)0);
-            DicomFile dcm = new DicomFile(ds);
+            //DICOMX1.DICOMSOPClassUID = "1.2.840.10008.5.1.4.1.1.7";
+            //DICOMX1.DICOMSOPInstanceUID = "1.2.7.3.8." + System.DateTime.Now.ToString("yyyy.MM.dd") + "." + System.DateTime.Now.ToString("hh.mm.ss") + ".1";
+            //DICOMX1.DICOMImplementationClassUID = "1.2.7.3.8.2007.10.17.23.00.00.3";
+            //DICOMX1.DICOMImplementationVersionName = "MASSUN";
+            //DICOMX1.DICOMSourceApplicationEntityTitle = "ZYPACS";
+            //DICOMX1.DICOMManufacturer = "ZYPACS";
+            //DICOMX1.DICOMModality = modality;
+            //DICOMX1.DICOMPatientName = patientname;
+            //DICOMX1.DICOMPatientSex = patientsex;
+            //DICOMX1.DICOMSeriesNumber = 0;
+            //DICOMX1.DICOMImageNumber = 0;
+            //DICOMX1.DICOMStudyInstanceUID = "1.2.7.3.8." + System.DateTime.Now.ToString("yyyy.MM.dd") + "." + System.DateTime.Now.ToString("hh.mm.ss") + ".101";
+            //DICOMX1.DICOMSeriesInstanceUID = "1.2.7.3.8." + System.DateTime.Now.ToString("yyyy.MM.dd") + "." + System.DateTime.Now.ToString("hh.mm.ss");
+            //DICOMX1.DICOMPatientID = processnum;
+            //DICOMX1.DICOMStudyID = processnum;
+            //DICOMX1.DICOMInstitutionName = Hospital;
+            //DICOMX1.DICOMStudyDescrp = "ZYPACS";
+            //DICOMX1.DICOMCityName = "City";
+            //DICOMX1.DICOMRefPhyName = "ExDr";
+            //DICOMX1.DICOMPixelSpaceHeight = 1;
+            //DICOMX1.DICOMPixelSpaceWidth = 1;
+            //DICOMX1.ConvertFileToDICOM(FileRN, "c:\\lzqtemp0.dcm");
+            //DicomImage img = new DicomImage("C:\\lzqtemp0.DCM");
+            //DicomDataset ds = img.Dataset;
+            //ds.Add(DicomTag.PlanarConfiguration, (ushort)0);
+            //DicomFile dcm = new DicomFile(ds);
             
-            dcm.Save("c:\\lzqtemp.dcm");
+            //dcm.Save("c:\\lzqtemp.dcm");
             
 
             return 0;

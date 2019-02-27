@@ -264,8 +264,8 @@ namespace GhostWinterCaptureImage
                     //t.Start();
                     NetworkStream stream = new NetworkStream(mySock);
                     byte[] data = new byte[2048];
-                    stream.Read(data, 0, data.Length);
-                    string msg = System.Text.Encoding.UTF8.GetString(data);
+                    int bs = stream.Read(data, 0, data.Length);
+                    string msg = System.Text.Encoding.UTF8.GetString(data,0,bs);
                     //RunCommand(msg);
                     OnReceivedMsg(msg); 
                 }

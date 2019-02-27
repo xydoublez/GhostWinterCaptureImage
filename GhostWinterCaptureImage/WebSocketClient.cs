@@ -152,7 +152,7 @@ namespace GhostWinterCaptureImage
                 {
                     using (Socket mySock = client.Client)
                     {
-                        mySock.Send(System.Text.Encoding.GetEncoding("gb2312").GetBytes(data));
+                        mySock.Send(System.Text.Encoding.UTF8.GetBytes(data));
 
                     }
                 }
